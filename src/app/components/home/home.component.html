@@ -1,2 +1,10 @@
-<p>{{ refreshBoolean(false) }}</p>
+<p>{{myBoolean}}</p>
 <button (click)="onSubmit()" >Clique</button>
+
+@if (value ===  false) {
+    <h1>Olá</h1>
+}
+
+@for (item of list; track $index) {
+    {{item}}
+}

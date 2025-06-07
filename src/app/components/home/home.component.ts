@@ -8,15 +8,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   myBoolean: string = "Yuri"
-
-  refreshBoolean(value: boolean): string {
-    
-     if (value === true){
+  value: boolean = false
+  list = [1, 2, 3, 4]
+  onSubmit () {
+      if (this.value === false){
     this.myBoolean = "Gabriely Karen"
   }
-    return this.myBoolean
-  };
-
-  onSubmit () {
-    this.refreshBoolean(true)
+    
 }}
