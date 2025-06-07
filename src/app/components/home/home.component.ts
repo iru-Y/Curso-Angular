@@ -7,13 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  myBoolean: String = "Yuri";
+  myBoolean: string = "Yuri"
 
-  refreshBoolean(value: boolean): String {
+  refreshBoolean(value: boolean): string {
     
      if (value === true){
-    this.myBoolean = "Gaby"
+    this.myBoolean = "Gabriely Karen"
   }
     return this.myBoolean
   };
-}
+
+  onSubmit () {
+    this.refreshBoolean(true)
+}}
